@@ -2,11 +2,11 @@ import java.util.*;
 public class ATM {
     public static void main(String[] args) {
 
-        int balance = 1000, withdraw,deposite,num;
+        int balance = 0000, withdraw,deposite,num;
         Scanner sc = new Scanner(System.in);
         while(true)
         {
-            System.out.println("Welcome to your ATM of trust <3");
+            System.out.println("Welcome to your ATM of trust Andreia");
             System.out.println("1.Withdraw");
             System.out.println("2.Deposite");
             System.out.println("3.Check Balance");
@@ -21,7 +21,7 @@ public class ATM {
                     if(balance>=withdraw)
                     {
                         balance = balance-withdraw;
-                        System.out.println("Balance Amount is: 11"+balance);
+                        System.out.println("Balance Amount is: "+balance);
                         System.out.println("Please collect money");
                     }
                     else{
@@ -33,7 +33,7 @@ public class ATM {
                     System.out.println("Enter Amount to deposite");
                     deposite = sc.nextInt();
                     balance = balance+deposite;
-                    System.out.println("Balance Ampunt is: "+balance);
+                    System.out.println("Balance Amount is: "+balance);
                     System.out.println("    ");
                     break;
                 case 3:
