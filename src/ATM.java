@@ -6,7 +6,7 @@ public class ATM {
         Scanner sc = new Scanner(System.in);
         while(true)
         {
-            System.out.println("Welcome to your ATM of trust Andreia");
+            System.out.println("Welcome to your ATM of trust Maria");
             System.out.println("1.Withdraw");
             System.out.println("2.Deposite");
             System.out.println("3.Check Balance");
