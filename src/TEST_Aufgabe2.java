@@ -1,23 +1,22 @@
 import java.util.Random;
-
 public class TEST_Aufgabe2 {
     public static void  main(String[] args){
-
         Random random = new Random();
-        int summe = 0;
+        int Ergebnis = 0;
 
         while (true){
-            int Rand = random.nextInt(10);
+            int zufallszahl = random.nextInt(10);
 
-            System.out.println(Rand);
-            if (Rand == 5){
+            System.out.println(zufallszahl);
+            if
+            (zufallszahl == 5){
                 break;
             }
             else{
-                summe += Rand;
+                Ergebnis += zufallszahl;
 
             }
-        }
-        System.out.println("das ist das Ergebnis " +summe);
+        } System.out.println(Ergebnis);
+
     }
 }
