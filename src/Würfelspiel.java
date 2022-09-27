@@ -19,6 +19,7 @@ public class Würfelspiel {
             }
 
 
+
         }
         System.out.println("AI dicing..." +"");
         for (int i = 0; i < 6; i++) {
