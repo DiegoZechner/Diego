@@ -1,20 +1,30 @@
-import java.util.Random;
+import java.util.Scanner;
+public class TEST
+{
 
-public class TEST {
     public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
 
-        Random random = new Random();
-
-        int Rand1 = random.nextInt(1000);
-
-        int Rand2 = random.nextInt(Rand1) ;
-
+    /*int[] zahlen = new int[] {21, 52, 3, 4, 45, 6, 7, 8, 9};
+    for(int i = 0; i<zahlen.length; i++) {
+        System.out.print(zahlen[i]+" ");
+    }*/
 
 
-        for (int x = Rand1; x>= Rand2; x--  )
-            System.out.println(x);
-        System.out.println("-");
-        System.out.println(Rand1);
-        System.out.println(Rand2);
+        int[] speicher = new int[6];
+        int zahlenEingeben = 0;
+        System.out.println("Gib 6 Zahlen ein: ");
+        for(int i = 1; i<=6; i++) {
+            zahlenEingeben = s.nextInt();
+        }
+
+
+        int[] gibAus = new int[zahlenEingeben];
+        for(int j = 0; j<gibAus.length; j++) {
+            System.out.println(gibAus[j]);
+
+
+        }
+
     }
 }
