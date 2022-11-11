@@ -1,4 +1,5 @@
-import java.util.InputMismatchException;
+package Kalender_ATM_TicToc_Dicegame;
+
 import java.util.Scanner;
 
 public class Kalender {
@@ -23,65 +24,72 @@ public class Kalender {
     }
 
     public static void createCA(int month, int startday) {
-        String[] days = {"MO", "DI", "MI", "DO", "FR", "SA", "SO"};
-        int i = 0;
+        String[] days = {"| MO |", "| DI |", "| MI |", "| DO |", "| FR |", "| SA |", "| SO |"};
+
 
         int daysinmonths = 0;
         switch (month) {
             case 1:
+                System.out.println("January");
                 daysinmonths = 31;
                 break;
             case 2:
+                System.out.println("February");
                 daysinmonths = 28;
                 break;
             case 3:
+                System.out.println("March");
                 daysinmonths = 30;
                 break;
             case 4:
+                System.out.println("April");
                 daysinmonths = 30;
                 break;
             case 5:
+                System.out.println("May");
                 daysinmonths = 31;
                 break;
             case 6:
+                System.out.println("June");
                 daysinmonths = 30;
                 break;
             case 7:
+                System.out.println("July");
                 daysinmonths = 31;
                 break;
             case 8:
+                System.out.println("August");
                 daysinmonths = 31;
                 break;
             case 9:
+                System.out.println("September");
                 daysinmonths = 30;
                 break;
             case 10:
+                System.out.println("October");
                 daysinmonths = 31;
                 break;
             case 11:
+                System.out.println("November");
                 daysinmonths = 30;
                 break;
             case 12:
+                System.out.println("December");
                 daysinmonths = 31;
                 break;
-        }while (i < 7){
-            if(i == 0)
-                System.out.print(" |");
-            else
-                System.out.print(" | ");
+        }
+        System.out.println(" ");
+        for (int i = 0; i < days.length; i++) {
             System.out.print(days[i]);
-            i++;
-            if (i == 7) System.out.println("| ");
 
         }
+        System.out.println(" ");
         for (int j = 1; j <= daysinmonths ; j++) {
-            System.out.print(" ");
             System.out.print(j);
         }
 
 
     }
-
 
 
 }

@@ -1,3 +1,5 @@
+package Test;
+
 import java.util.Random;
 public class TEST_Aufgabe2 {
     public static void  main(String[] args){

@@ -1,3 +1,5 @@
+package Loop;
+
 import java.util.Random;
 
 public class Loop_Aufgabe_1 {

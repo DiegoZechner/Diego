@@ -1,3 +1,5 @@
+package Kalender_ATM_TicToc_Dicegame;
+
 import java.util.*;
 public class ATM {
     public static void main(String[] args) {
@@ -6,7 +8,7 @@ public class ATM {
         Scanner sc = new Scanner(System.in);
         while(true)
         {
-            System.out.println("Welcome to your ATM of trust Maria");
+            System.out.println("Welcome to your Kalender_ATM_Tictoc.ATM of trust Maria");
             System.out.println("1.Withdraw");
             System.out.println("2.Deposite");
             System.out.println("3.Check Balance");

@@ -1,3 +1,5 @@
+package Switch;
+
 import java.util.Random;
 
 public class While_Aufgabe_1 {

@@ -1,3 +1,5 @@
+package Switch;
+
 import java.util.Random;
 public class Switch_Aufgabe_1 {
     public static void main(String[] args) {
