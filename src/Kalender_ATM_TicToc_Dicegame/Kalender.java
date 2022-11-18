@@ -24,7 +24,7 @@ public class Kalender {
     }
 
     public static void createCA(int month, int startday) {
-        String[] days = {"| MO |", "| DI |", "| MI |", "| DO |", "| FR |", "| SA |", "| SO |"};
+        String[] days = {"|  MO  |", "|  DI  |", "|  MI  |", "|  DO  |", "|  FR  |", "|  SA  |", "|  SO  |"};
 
 
         int daysinmonths = 0;
@@ -85,13 +85,25 @@ public class Kalender {
         }
         System.out.println(" ");
         for (int j = 1; j <= daysinmonths ; j++) {
-            System.out.print(j);
+        }
+        for (int i = 1; i <= startday-21; i++) {
+            System.out.print("|      |");
+
         }
 
+        for (int i = 1; i <= daysinmonths; i++) {
+            if (i < 10) {
+                System.out.print("|   " + i + "  |");
+            }
+            else{
+            System.out.print("|  " + i + "  |");}
+            if ((i+startday) % 7 == 0){
+                System.out.println(" ");
+            }
+
+        }
 
     }
-
-
 }
 
 
