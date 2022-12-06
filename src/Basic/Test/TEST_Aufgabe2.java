@@ -1,4 +1,4 @@
-package Test;
+package Basic.Test;
 
 import java.util.Random;
 public class TEST_Aufgabe2 {

@@ -1,4 +1,4 @@
-package IF_bediungung;
+package Basic.IF_bediungung;
 
 import java.util.Random;
 

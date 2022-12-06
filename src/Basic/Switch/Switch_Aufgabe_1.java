@@ -1,4 +1,4 @@
-package Switch;
+package Basic.Switch;
 
 import java.util.Random;
 public class Switch_Aufgabe_1 {

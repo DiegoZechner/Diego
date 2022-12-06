@@ -1,4 +1,4 @@
-package Kalender_ATM_TicToc_Dicegame;
+package Basic.Kalender_ATM_TicToc_Dicegame;
 
 import java.util.Scanner;
 
@@ -86,7 +86,8 @@ public class Kalender {
         System.out.println(" ");
         for (int j = 1; j <= daysinmonths ; j++) {
         }
-        for (int i = 1; i <= startday-21; i++) {
+
+    for (int i = 1; i <= startday-21; i++) {
             System.out.print("|      |");
 
         }

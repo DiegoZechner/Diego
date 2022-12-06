@@ -1,4 +1,4 @@
-package Quersumme;
+package Basic.Quersumme;
 
 public class Quersumme_3 {
 

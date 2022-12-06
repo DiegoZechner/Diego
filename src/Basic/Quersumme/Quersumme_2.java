@@ -1,4 +1,4 @@
-package Quersumme;
+package Basic.Quersumme;
 
 public class Quersumme_2{
 
@@ -17,7 +17,7 @@ public class Quersumme_2{
             int rest = sum % 7;
 
             if(rest ==0){
-                System.out.println("Number:"+ cnt + "Quersumme:" + sum);
+                System.out.println("Number:"+ cnt + "Basic.Quersumme:" + sum);
             }
         }
     }

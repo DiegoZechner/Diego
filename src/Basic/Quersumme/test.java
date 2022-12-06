@@ -1,4 +1,4 @@
-package Quersumme;
+package Basic.Quersumme;
 
 import java.util.*;
 

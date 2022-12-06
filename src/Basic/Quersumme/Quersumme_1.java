@@ -1,4 +1,4 @@
-package Quersumme;
+package Basic.Quersumme;
 
 public class Quersumme_1{
 
@@ -15,7 +15,7 @@ public class Quersumme_1{
                 sum = sum + Character.getNumericValue(numbers[i]);
             }
             if (sum == 15){
-                System.out.println("Nummer: "+ cnt + " Quersumme: " + sum);
+                System.out.println("Nummer: "+ cnt + " Basic.Quersumme: " + sum);
             }
 
         }

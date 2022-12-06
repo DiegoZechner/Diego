@@ -1,5 +1,4 @@
-package Arrays;
-import java.util.Arrays;
+package Basic.Arrays;
 import java.util.Scanner;
 import java.util.Random;
 

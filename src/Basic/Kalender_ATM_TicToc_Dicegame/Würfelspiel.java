@@ -1,4 +1,4 @@
-package Kalender_ATM_TicToc_Dicegame;
+package Basic.Kalender_ATM_TicToc_Dicegame;
 
 import java.util.Random;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package Loop;
+package Basic.Loop;
 
 import java.util.Random;
 
