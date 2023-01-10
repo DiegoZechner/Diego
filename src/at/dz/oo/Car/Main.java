@@ -1,8 +1,8 @@
 package at.dz.oo.Car;
 
 public class Main {
-    public static void main(String[] args){
-
+    public static void main(String[] args) {
+    /*
         Car c1 = new Car();
         c1.brand = "BMW";
         c1.fuelConsumption = 10;
@@ -20,19 +20,19 @@ public class Main {
         c2.speed = 0;
         c2.accelerate = 40;
         c2.brake = 20;
+    */
 
-            //Start
-            System.out.println("Tank-Status " + c2.fuelAmount + "l");
-            System.out.println("Speed " +c2.speed + "km/h");
+        System.out.println("Tank-Status " + c2.fuelAmount + "l");
+        System.out.println("Speed " + c2.speed + "km/h");
         c2.drive();
 
         c2.brake();
 
-        c2.turboboost();
+        c2.turboBoost();
 
         c2.honk(5);
 
-        c2.RemainingRange();
+        c2.getRemainingRange();
 
     }
 
