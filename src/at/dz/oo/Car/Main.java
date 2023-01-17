@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
     /*
         Car c1 = new Car();
-        c1.brand = "BMW";
+        c1.y = "BMW";
         c1.fuelConsumption = 10;
         c1.serialNumber = "E30";
         c1.fuelAmount = 50;
@@ -22,7 +22,8 @@ public class Main {
         c2.brake = 20;
     */
         // Refactoring
-        Car c2 = new Car(100,100, "Ferrari", "F40",0,120, 100,2);
+
+        Car c2 = new Car(100, 100, "Ferrari", "F40", 0, 120, 100, 2);
         c2.dashboard();
         System.out.println();
         c2.drive();
