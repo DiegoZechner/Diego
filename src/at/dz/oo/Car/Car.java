@@ -10,9 +10,12 @@ public class Car {
     private int brake;
     private String brand;
     private String serialNumber;
+    private Engine engine;
 
 
-    public Car(int fuelConsumption, int fuelAmount, String brand, String serialNumber, int speed, int accelerate, int brake, int amountOfRepetitions) {
+
+    public Car(Engine engine, int fuelConsumption, int fuelAmount, String brand, String serialNumber, int speed, int accelerate, int brake, int amountOfRepetitions) {
+        this.engine = engine;
         this.fuelConsumption = fuelConsumption;
         this.fuelAmount = fuelAmount;
         this.brand = brand;
@@ -69,6 +72,17 @@ public class Car {
         System.out.println("So oft kannst du noch fahren " + remaining);
         return remaining;
     }
+    // Engine
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
+    }
+
+
     //  SETTER & GETTER
 
     public int getAccelerate() {

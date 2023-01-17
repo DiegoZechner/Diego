@@ -21,9 +21,11 @@ public class Main {
         c2.accelerate = 40;
         c2.brake = 20;
     */
-        // Refactoring
+        // create Engine
+        Engine e1 = new Engine(140, Engine.TYPE.Diesel);
 
-        Car c2 = new Car(100, 100, "Ferrari", "F40", 0, 120, 100, 2);
+        // Refactoring
+        Car c2 = new Car(e1,100, 100, "Ferrari", "F40", 0, 120, 100, 2);
         c2.dashboard();
         System.out.println();
         c2.drive();
