@@ -21,17 +21,18 @@ public class Main {
         c2.accelerate = 40;
         c2.brake = 20;
     */
-
-        System.out.println("Tank-Status " + c2.fuelAmount + "l");
-        System.out.println("Speed " + c2.speed + "km/h");
+        // Refactoring
+        Car c2 = new Car(100,100, "Ferrari", "F40",0,120, 100,2);
+        c2.dashboard();
+        System.out.println();
         c2.drive();
 
         c2.brake();
-
+        System.out.println();
         c2.turboBoost();
 
-        c2.honk(5);
-
+        c2.honk();
+        System.out.println();
         c2.getRemainingRange();
 
     }

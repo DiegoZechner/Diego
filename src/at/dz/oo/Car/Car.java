@@ -1,24 +1,34 @@
 package at.dz.oo.Car;
 
 public class Car {
-    public int fuelConsumption;
-    public int fuelAmount;
-    public int tank;
-    public String brand;
-    public String serialNumber;
-    private String color;
-    public int speed;
-    public int accelerate;
-    public int brake;
+    private int fuelConsumption;
+    private int fuelAmount;
+    private int tank;
+    private int speed;
+    private int accelerate;
+    private int brake;
+    private String brand;
+    private String serialNumber;
+    public int amountOfRepetitions;
 
-    public Car(int fuelConsumption,int fuelAmount,String brand,String serialNumber){
+
+    public Car(int fuelConsumption,int fuelAmount,String brand,String serialNumber,int speed, int accelerate, int brake, int amountOfRepetitions){
             this.fuelConsumption = fuelConsumption;
             this.fuelAmount = fuelAmount;
             this.brand = brand;
             this.serialNumber = serialNumber;
+            this.speed = speed;
+            this.accelerate = accelerate;
+            this.brake = brake;
+            this.amountOfRepetitions = amountOfRepetitions;
     }
 
     //Methode
+    public void dashboard (){
+        System.out.println("Tank-Status " + this.fuelAmount + "l");
+        System.out.println("Speed " + this.speed + "km/h");}
+
+
     public void drive() {
         this.fuelAmount = this.fuelAmount - fuelConsumption;
         System.out.println("I am driving ");
@@ -32,7 +42,9 @@ public class Car {
     public void brake() {
         this.speed = this.accelerate - brake;
         System.out.println("I am braking ");
-        System.out.println("braking " + this.speed + "km/h");
+        System.out.println("braking");
+        System.out.println();
+        System.out.println("Speed " + this.speed + " km/h");
     }
 
     public void turboBoost() {
@@ -43,7 +55,7 @@ public class Car {
         System.out.println(" ");
     }
 
-    public void honk(int amountOfRepetitions) {
+    public void honk() {
         for (int i = 0; i < amountOfRepetitions; i++) {
             System.out.println("Tuuut ");
 
