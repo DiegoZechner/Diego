@@ -25,18 +25,24 @@ public class Main {
         Engine e1 = new Engine(140, Engine.TYPE.Diesel);
 
         // Refactoring
-        Car c2 = new Car(e1,100, 100, "Ferrari", "F40", 0, 120, 100, 2);
+        Car c2 = new Car(e1,50, 100, "Ferrari", "F40", 0, 120, 100, 2);
         c2.dashboard();
+        e1.getHorsePower();
         System.out.println();
+        e1.drive(120);
         c2.drive();
 
-        c2.brake();
+        /* c2.brake();
         System.out.println();
         c2.turboBoost();
 
         c2.honk();
         System.out.println();
         c2.getRemainingRange();
+        */
+
+
+
 
     }
 

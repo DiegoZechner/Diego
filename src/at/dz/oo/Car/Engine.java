@@ -2,7 +2,7 @@ package at.dz.oo.Car;
 
 public class Engine {
     public enum TYPE {Diesel,GAS}
-    private int horsePower;
+    public int horsePower;
     private TYPE type;
 
 
@@ -16,7 +16,7 @@ public class Engine {
     // amount should be between 0 and 100
 
     public void drive(int amount) {
-        System.out.println("The engine is running " + amount);
+        System.out.println("The engine is running " + amount + "km/h max speed");
 
     }
 
