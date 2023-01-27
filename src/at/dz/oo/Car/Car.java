@@ -1,5 +1,8 @@
 package at.dz.oo.Car;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Car {
     public int amountOfRepetitions;
     private int speed;
@@ -8,6 +11,7 @@ public class Car {
     private String serialNumber;
     private Engine engine;
     private  Tank tank;
+    private List<RearMirror> mirrors;
 
 
 
@@ -19,10 +23,16 @@ public class Car {
         this.brake = brake;
         this.amountOfRepetitions = amountOfRepetitions;
         this.tank = tank;
+        this.mirrors = new ArrayList<>();
     }
 
     //Methode
-
+    public void addMirror(RearMirror rearMirror){
+            this.mirrors.add(rearMirror);
+    }
+    public List<RearMirror> getMirrors(){
+        return mirrors;
+    }
 
 
     public void brake() {
@@ -74,8 +84,6 @@ public class Car {
         this.brake = brake;
     }
 
-
-
     public int getSpeed() {
         return speed;
     }
@@ -83,8 +91,6 @@ public class Car {
     public void setSpeed(int speed) {
         this.speed = speed;
     }
-
-
 
     public String getBrand() {
         return brand;
