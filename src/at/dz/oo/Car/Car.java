@@ -26,7 +26,6 @@ public class Car {
         this.mirrors = new ArrayList<>();
     }
 
-    //Methode
     public void addMirror(RearMirror rearMirror){
             this.mirrors.add(rearMirror);
     }
