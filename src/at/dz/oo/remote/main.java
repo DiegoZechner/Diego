@@ -6,12 +6,17 @@ public class main {
                     battery battery2 = new battery();
                     remote remote = new remote(battery1, battery2);
 
+                    //Printing the Status
+                    remote.getStatus();
+                     System.out.println("current status: " + remote.getStatus() + "%");
+
                     // Turning on the remote
                     remote.turnOn();
-                    System.out.println("Remote status: " + remote.getStatus());
+                    System.out.println("Remote status: " + remote.getStatus() + "%");
+
 
                     // Turning off the remote
                     remote.turnOff();
-                    System.out.println("Remote status: " + remote.getStatus());
+                    System.out.println("Remote status: " + remote.getStatus() + "%");
                 }
             }
