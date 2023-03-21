@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Discord/Discord.iml" filepath="$PROJECT_DIR$/Discord/Discord.iml" />
       <module fileurl="file://$PROJECT_DIR$/SWP_JAVA.iml" filepath="$PROJECT_DIR$/SWP_JAVA.iml" />
     </modules>
   </component>
