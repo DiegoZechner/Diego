@@ -7,12 +7,14 @@ import java.util.Scanner;
 public class Camera {
     private int resolutionLevel;
     private int name;
+    private Storage storage;
     private int counter;
     Scanner scan = new Scanner(System.in);
 
-    public Camera(){
+    public Camera(Storage storage){
         this.counter = 999;
         this.name = this.counter;
+        this.storage = storage;
     }
 
     public Storage setResolutionLevel() {
@@ -37,21 +39,14 @@ public class Camera {
         return null;
     }
 
-
-
     public void takePicture() {
         this.counter++;
         this.name = this.counter;
-        System.out.println("Bild mit Auflösungsstufe " + resolutionLevel + " aufgenommen " + name + " - jpg");
+        String fileName = "Bild " + name + ".jpg";
+        storage.addFile(fileName, getResolutionLevel());
     }
 
     public int getResolutionLevel() {
         return this.resolutionLevel;
     }
-
-    public void size() {
-
-    }
-
-
 }
